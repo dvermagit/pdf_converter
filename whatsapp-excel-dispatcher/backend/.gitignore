@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Secrets — .env.* also covers backups and per-environment copies
+.env
+.env.*
+!.env.example
+
+# Runtime artifacts: uploaded sheets and the per-recipient workbooks the
+# app generates. Both hold real contact data and are recreated on demand.
+uploads/
+generated/
+
+# Spreadsheets with real contact data kept for local testing
+sample_campaign_valid.xlsx
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
